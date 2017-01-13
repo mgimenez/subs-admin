@@ -1,0 +1,52 @@
+body {
+  max-width: 100%;
+  margin: auto;
+  @include respond-to('medium') {
+    max-width: 80%;
+  }
+
+  ul {
+    padding: 0;
+  }
+}
+
+.video-container {
+  display: inline-block;
+
+  .progress-bar {
+
+    padding: 20px 0;
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: #000;
+    }
+    .progress-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #4285f4;
+      position: absolute;
+      left: 0;
+      top: 16px;
+      z-index: 10;
+      display: block;
+    }
+  }
+
+  .video-controls {
+    margin-top: 0;
+    .btn-video {
+      margin: 10px 20px 10px 0;
+      width: 10px;
+    }
+  }
+
+  .el-hide {
+    display: none;
+  }
+}

@@ -1,0 +1,6 @@
+$breakpoints: (
+  'medium':  ( min-width:  768px ),
+  'medium-landscape': ( min-width:  1024px ),
+  'large':  ( min-width: 1400px ),
+  'wide':  ( min-width: 1600px )
+) !default;
